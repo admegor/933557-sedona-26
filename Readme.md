@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Егор Юрченко](https://up.htmlacademy.ru/htmlcss/26/user/933557).
-* Наставник: `Неизвестно`.
+* Наставник: [Егор Дьяченко](https://htmlacademy.ru/profile/semperhomolupus).
 
 ---
 
