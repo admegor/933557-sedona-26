@@ -5,8 +5,137 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__top top">
+            <a class="top__logo" href="index.html"><img src="" alt="Логотип"></a>
+            <nav class="top__main-nav main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">Информация/li>
+                <li class="main-nav__item">Фото и видео</li>
+                <li class="main-nav__item">Карта штата</li>
+                <li class="main-nav__item">Гостиницы</li>
+              </ul>
+            </nav>
+        </div>
+        <div class="header__initial-screen">
+          <img src="#" alt="Логотип">
+        </div>
+      </div>
+    </header>
+    <main class="main">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+      <section class="slogan">
+        <div class="slogan__wrapper">
+          <p class="slogan__top">Седона — небольшой городок в Аризоне,
+              заслуживающий большего!</p>
+          <p class="slogan__bottom">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+      </section>
+
+      <section class="promo">
+        <div class="promo__wrapper">
+          <div class="promo__info">
+            <p class="promo__header">Настоящийгородок</p>
+            <p class="promo__count">— №1 —</p>
+            <p class="promo__disc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+          <img src="#" alt="Фото городка">
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="advanteges__wrapper">
+          <div class="advanteges__section">
+            <img src="" alt="Жильё">
+            <h2 class="advanteges__header">Жильё</h2>
+            <p class="advanteges__disc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </div>
+          <div class="advanteges__section">
+            <img src="" alt="Еда">
+            <h2 class="advanteges__header">Еда</h2>
+            <p class="advanteges__disc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+          <div class="advanteges__section">
+            <img src="" alt="Сувениры">
+            <h2 class="advanteges__header">Сувениры</h2>
+            <p class="advanteges__disc">Не только китайского, но и местного производства!</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo">
+        <div class="promo__wrapper">
+          <img src="#" alt="Фото городка">
+          <div class="promo__info">
+            <p class="promo__header">Там есть<br>Мост дьявола</p>
+            <p class="promo__count">— №2 —</p>
+            <p class="promo__disc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature">
+        <div class="feature">
+          <div>
+            <p class="feature__header">Небольшая площадь</p>
+            <p class="feature__count">— №3 —</p>
+            <p class="feature__content">Все достопримечательности находятся очень близко</p>
+          </div>
+          <div>
+            <p class="feature__header">Красивая дорога</p>
+            <p class="feature__count">— №4 —</p>
+            <p class="feature__content">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div>
+            <p class="feature__header">Мало туристов</p>
+            <p class="feature__count">— №5 —</p>
+            <p class="feature__content">Большинство едет в гранд каньон и толпится там</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="call-to-action">
+        <div class="call-to-action__wrapper">
+          <h3 class="call-to-action__header">Заинтерисовались?</h3>
+          <p class="call-to-action__content">Укажите предполагаемые даты поездки, 
+              и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        </div>
+        <button class="call-to-action__button button"></button>
+        <img src="#" alt="Карта">
+      </section>
+
+      <section class="form visually-hidden">
+        <div class="form__wrapper">
+          <form action="form__area">
+            <label for="date-of-arrival"></label>
+            <input type="date" name="date-of-arrival" id="date-of-arrival">
+            <label for="departure-date"></label>
+            <input type="date" name="departure-date" id="departure-date">
+            <label for="adults"></label>
+            <input type="number" name="adults" id="adults">
+            <label for="childrens"></label>
+            <input type="number" name="childrens" id="childrens">
+            <input type="submit" value="Найти">
+          </form>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <img src="#" alt="Логотип">
+        <ul class="footer__social">
+          <li class="footer__social-item">Мы в Twitter</li>
+          <li class="footer__social-item">Мы вFacebook</li>
+          <li class="footer__social-item">Мы в Youtube</li>
+        </ul>
+        <div class="footer__developed-by">
+          <p>Website by</p>
+          <img src="#" alt="Html academy">
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
