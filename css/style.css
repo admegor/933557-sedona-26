@@ -113,6 +113,14 @@ p {
     color: #000000;
 }
 
+.main-nav__link:hover {
+    color: #81b3d2;
+}
+
+.main-nav__link:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .header__initial-screen {
     background-image: url('../img/background-photo.jpg');
     background-repeat: no-repeat;
@@ -160,18 +168,13 @@ p {
     text-transform: uppercase;
     margin-top: 26px;
     color: #333333;
+    margin-bottom: 50px;
 }
 
 .promo {
     width: 100%;
-    background-color: #81b3d2;
-    
-    margin-top: 50px;
-}
-
-.promo__wrapper-photo {
-    background: url('../img/photo-city.jpg') no-repeat 400px center;
-    background-size: contain;
+    height: 256px;
+    background-color: #81b3d2;    
 }
 
 .promo__wrapper {
@@ -184,7 +187,7 @@ p {
 }
 
 .promo__info {
-    min-width: 400px;
+    width: 400px;
 }
 
 .promo__header {
@@ -203,4 +206,48 @@ p {
     color: #ffffff;
     text-transform: uppercase;
     margin-top: 24px;
+}
+
+.advantages {
+    width: 100%;
+}
+
+.advanteges__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 330px;
+}
+
+.advanteges__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    width: 300px;
+    margin: 0 50px;
+}
+
+.advanteges__section img {    
+    position: absolute;
+    bottom: 198px;
+}
+
+.advanteges__header {
+    align-self: center;
+    margin: 0;
+    margin-top: 12px;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    text-transform: uppercase;       
+}
+
+.advanteges__desc {
+    position: absolute;
+    bottom: 83px;
+    text-transform: uppercase;
+    color: #333333;    
 }
