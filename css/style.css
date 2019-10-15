@@ -469,15 +469,20 @@ p {
     background-color: #f2f2f2;
     height: 38px;
     padding-left: 20px;
-    padding-right: 30px;
+    padding-right: 30px;    
 }
 
 
 .form__date-of-arrival-wrapper,
 .form__departure-date-wrapper {
+    position: relative;
     display: flex;    
     align-items: center;
     margin-bottom: 30px;
+}
+
+.form__date-of-arrival-wrapper label {
+    margin-right: 21px;
 }
 
 .form__fieldset input[placeholder] {
@@ -485,4 +490,27 @@ p {
     font-weight: 700;
     text-transform: uppercase;
     line-height: 26px;
+}
+
+.form__date-of-arrival-wrapper svg {
+    position: absolute;
+    right: 7px;
+}
+
+.form__fieldset input:hover {
+    background-color: #ebebeb;    
+}
+
+.form__fieldset input:focus {
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+    outline: none;
+}
+
+.form__date-of-arrival-wrapper:hover svg path {
+    fill: #000000;
+}
+
+input[type=text]:focus .form {
+    background-color: tomato;
 }
