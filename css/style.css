@@ -339,6 +339,17 @@ p {
     margin-top: 47px;
 }
 
+.call-to-action__button:hover {
+    background-color: #604e43;
+}
+
+.call-to-action__button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #503e33;
+}
+
+
+
 .call-to-action img {
     height: 472px;
 }
@@ -379,6 +390,18 @@ p {
     margin: 3px;
 }
 
+.footer__social-item:hover {
+    background-color: #669ec0;
+}
+
+.footer__social-item:active {
+    background-color: #5496bd;
+}
+
+.footer__social-item:active svg {
+    opacity: 0.3;
+}
+
 .footer__social-link {
     display: flex;
     justify-content: center;
@@ -402,3 +425,10 @@ p {
     margin-right: 8px;
 }
 
+.footer__developed-by-link:hover svg path {
+    fill: #81b3d2;
+}
+
+.footer__developed-by-link:active svg path {
+    fill: #bdbbbc;
+}
