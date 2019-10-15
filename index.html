@@ -105,24 +105,32 @@
               и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="call-to-action__button button">Поиск гостиницы в седоне</button>
         </div>
-        
-        <img src="img/map.jpg" alt="Карта" width="1200px" height="274px">
-      </section>
-
-      <section class="form visually-hidden">
         <div class="form__wrapper">
-          <form action="form__area">
-            <label for="date-of-arrival"></label>
-            <input type="date" name="date-of-arrival" id="date-of-arrival">
-            <label for="departure-date"></label>
-            <input type="date" name="departure-date" id="departure-date">
-            <label for="adults"></label>
-            <input type="number" name="adults" id="adults">
-            <label for="childrens"></label>
-            <input type="number" name="childrens" id="childrens">
-            <input type="submit" value="Найти">
-          </form>
-        </div>
+            <img src="img/map.jpg" alt="Карта" width="1200px" height="274px">
+            <div class="form">
+              <div class="form__wrap">
+                <form action="form__area">
+                  <div class="form__fieldset">
+                    <div class="form__date-of-arrival-wrapper">
+                        <label for="date-of-arrival">Дата заезда:</label>
+                        <input type="text" name="date-of-arrival" id="date-of-arrival" placeholder="24 апреля 2017">
+                    </div>
+                    <div class="form__departure-date-wrapper">
+                        <label for="departure-date">Дата выезда:</label>
+                        <input type="text" name="departure-date" id="departure-date" placeholder="4 июля 2017">
+                    </div>
+                      
+                      
+                      <label for="adults">Взрослые:</label>
+                      <input type="number" name="adults" id="adults">
+                      <label for="childrens">Дети</label>
+                      <input type="number" name="childrens" id="childrens">
+                      <input class="button" type="submit" value="Найти">
+                  </div>
+                </form>
+              </div>
+            </div>                
+        </div>        
       </section>
 
     </main>

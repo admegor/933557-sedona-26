@@ -333,7 +333,7 @@ p {
 .call-to-action__button {
     background-color: #766357;    
     text-align: center;
-    padding: 30px 140px;
+    padding: 30px 138px;
     font-size: 21px;
     line-height: 26px;
     margin-top: 47px;
@@ -350,8 +350,8 @@ p {
 
 
 
-.call-to-action img {
-    height: 472px;
+.form__wrapper img {
+    height: 472px;    
 }
 
 .footer {
@@ -431,4 +431,58 @@ p {
 
 .footer__developed-by-link:active svg path {
     fill: #bdbbbc;
+}
+
+.form__wrapper {
+    position: relative;
+}
+
+.form {
+    width: 568px;
+    height: 395px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 315px;
+    z-index: 1;    
+}
+
+.form__wrap {
+    margin: 55px;
+}
+
+.form__fieldset {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__fieldset label {
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 26px;
+    margin-right: 18px;    
+}
+
+.form__fieldset input[type=text] {
+    width: 346px;
+    border: none;
+    background-color: #f2f2f2;
+    height: 38px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+
+.form__date-of-arrival-wrapper,
+.form__departure-date-wrapper {
+    display: flex;    
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.form__fieldset input[placeholder] {
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 26px;
 }
