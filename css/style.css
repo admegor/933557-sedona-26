@@ -558,6 +558,7 @@ p {
     margin: 0;
     background-color: #f2f2f2;
     position: relative;
+    display: block;
 }
 
 .form__people-count-adults input[placeholder],
@@ -590,7 +591,45 @@ p {
     display: flex;
 }
 
-.form__button-deduction::before {
+.form__button-deduction::before,
+.form__button-add::before {
     content: '';
     position: absolute;
+
+    width: 11px;
+    height: 3px;
+
+    top: 18px;
+    left: 13px;
+    background-color: #a9a9a9;
+}
+
+.form__button-add::after {
+    content: '';
+    position: absolute;
+
+    width: 3px;
+    height: 11px;
+
+    top: 14px;
+    left: 17px;
+    background-color: #a9a9a9;
+}
+
+.form__button-deduction:hover::before {
+    background-color: #000000;
+}
+
+.form__button-add:hover::before,
+.form__button-add:hover::after {
+    background-color: #000000;
+}
+
+.form__button-deduction:active::before {
+    background-color: #81b3d2;
+}
+
+.form__button-add:active::before,
+.form__button-add:active::after {
+    background-color: #81b3d2;
 }
