@@ -69,6 +69,7 @@ p {
     text-transform: uppercase;
     font-weight: 700;
     color: #ffffff;
+    padding: 0;
 }
 
 .slogan__bottom,
@@ -459,16 +460,18 @@ p {
 .form__fieldset label {
     font-weight: 700;
     text-transform: uppercase;
-    line-height: 26px;
-    margin-right: 18px;    
+    line-height: 26px;    
+    width: 100px;
+    margin-right: 10px;  
 }
 
-.form__fieldset input[type=text] {
+.form__date-of-arrival-wrapper input[type=text],
+.form__departure-date-wrapper input[type=text] {
     width: 346px;
     border: none;
     background-color: #f2f2f2;
     height: 38px;
-    padding-left: 20px;
+    padding-left: 15px;
     padding-right: 30px;    
 }
 
@@ -478,11 +481,7 @@ p {
     position: relative;
     display: flex;    
     align-items: center;
-    margin-bottom: 30px;
-}
-
-.form__date-of-arrival-wrapper label {
-    margin-right: 21px;
+    margin-bottom: 29px;
 }
 
 .form__fieldset input[placeholder] {
@@ -492,25 +491,106 @@ p {
     line-height: 26px;
 }
 
-.form__date-of-arrival-wrapper svg {
+.form__date-of-arrival-wrapper svg,
+.form__departure-date-wrapper svg {
     position: absolute;
     right: 7px;
 }
 
-.form__fieldset input:hover {
+.form__fieldset input[type=text]:hover {
     background-color: #ebebeb;    
 }
 
-.form__fieldset input:focus {
+.form__fieldset input[type=text]:focus {
     background-color: #fff;
     border: 2px solid #e5e5e5;
     outline: none;
 }
 
-.form__date-of-arrival-wrapper:hover svg path {
+.form__date-of-arrival-wrapper:hover .form__calendar,
+.form__departure-date-wrapper:hover .form__calendar {
     fill: #000000;
 }
 
-input[type=text]:focus .form {
-    background-color: tomato;
+.form__date-of-arrival-wrapper:active .form__calendar,
+.form__departure-date-wrapper:active .form__calendar {
+    fill: #81b3d2;
+}
+
+.form__people-count {
+    padding: 0;
+    border: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 54px;
+}
+
+.form__people-count-adults {
+    display: flex;
+    align-items: center;
+    width: 226px;
+}
+
+.form__people-count-adults label {
+    margin-right: 20px;
+}
+
+.form__people-count-childrens {
+    display: flex;
+    align-items: center;
+    width: 178px;
+}
+
+.form__people-count input {
+    width: 38px;
+    height: 38px;
+    border: none;
+    background-color: #f2f2f2;
+}
+
+.form__button-deduction,
+.form__button-add {
+    min-width: 38px;
+    min-height: 38px;
+    margin: 0;
+    background-color: #f2f2f2;
+    position: relative;
+}
+
+.form__people-count-adults input[placeholder],
+.form__people-count-childrens input[placeholder] {
+    text-align: center;
+}
+
+.form__people-count-adults label,
+.form__people-count-childrens label {    
+    flex-shrink: 1;    
+}
+
+.form__button-search {
+    background-color: #81b3d2;
+    width: 100%;
+    height: 58px;
+    font-size: 21px;
+}
+
+.form__button-search:hover {
+    background-color: #669ec0;
+}
+
+.form__button-search:focus {
+    color: rgba(255, 255, 255, 0.3);  
+    background-color: #5496bd;    
+}
+
+.form__people-count-area {
+    display: flex;
+}
+
+.form__button-deduction::before {
+    content: '';
+    position: absolute;
 }
