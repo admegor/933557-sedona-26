@@ -404,14 +404,12 @@ fieldset {
     background-color: #503e33;
 }
 
-
-
 .form__wrapper img {
     height: 472px;    
 }
 
 .footer {
-    widows: 100%;
+   width: 100%;
 }
 
 .footer__wrapper {
@@ -513,6 +511,7 @@ fieldset {
     position: relative;
 }
 
+
 .form {
     width: 568px;
     height: 395px;
@@ -520,7 +519,8 @@ fieldset {
     position: absolute;
     top: 0;
     left: 315px;
-    z-index: 1;    
+    z-index: 1;
+    display: none;  
 }
 
 .form__wrap {
@@ -735,6 +735,29 @@ fieldset {
 .form__button-add:active::after {
     background-color: #81b3d2;
 }
+
+.form-show {
+    display: block;
+    animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+  
+    70% {
+      transform: translateY(30px);
+    }
+  
+    90% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
 
 .inner-form {
     width: 100%;
@@ -967,9 +990,6 @@ fieldset {
     background: #ffffff;
 }
 
-
-
-
 .result {
     width: 100%;    
 }
@@ -1109,7 +1129,6 @@ fieldset {
 .result__sort-arrow-max:active::after {
     border-top-color: #81b3d2;
 }
-
 
 .hotel {
     width: 100%;
