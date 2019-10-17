@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'PT Sans';
     src: 
@@ -19,7 +20,8 @@
 }
 
 html {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -27,7 +29,8 @@ html {
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 }
 
 body {
@@ -62,7 +65,8 @@ fieldset {
     border: 0;
     padding: 0;
     white-space: nowrap;
-    clip-path: inset(100%);
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -115,9 +119,14 @@ fieldset {
     margin: 0 auto;
     padding: 0;   
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;    
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;    
 }
 
 .main-nav__list .main-nav__item:nth-child(2) {
@@ -155,8 +164,12 @@ fieldset {
     background-repeat: no-repeat;
     background-position: center -56px;
     min-height: 509px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
 }
 
@@ -209,6 +222,8 @@ fieldset {
 }
 
 .promo__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -241,15 +256,23 @@ fieldset {
 .advanteges__wrapper {
     width: 1200px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     height: 330px;
 }
 
 .advanteges__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
     text-align: center;
     width: 300px;
@@ -262,7 +285,9 @@ fieldset {
 }
 
 .advanteges__header {
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     margin: 0;
     margin-top: 12px;
     font-size: 21px;
@@ -284,8 +309,11 @@ fieldset {
 .feature__wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;    
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;    
 }
 
 .feature__block {
@@ -313,18 +341,34 @@ fieldset {
 
 .call-to-action {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;    
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;    
+    -webkit-box-align: center;    
+        -ms-flex-align: center;    
+            align-items: center;
 }
 
 .call-to-action__wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .call-to-action__header {
@@ -372,11 +416,17 @@ fieldset {
 
 .footer__wrapper {
     max-width: 1200px;
-    min-height: 120px;
+    height: 120px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .footer__hashtag {
@@ -391,6 +441,8 @@ fieldset {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: 30px
 }
@@ -415,20 +467,32 @@ fieldset {
 }
 
 .footer__social-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 46px;
     height: 48px;
 }
 
 .footer__social-link svg {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .footer__developed-by {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-right: 101px;
 }
 
@@ -464,8 +528,11 @@ fieldset {
 }
 
 .form__fieldset {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .form__fieldset label {
@@ -490,8 +557,12 @@ fieldset {
 .form__date-of-arrival-wrapper,
 .form__departure-date-wrapper {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;    
-    align-items: center;
+    -webkit-box-align: center;    
+        -ms-flex-align: center;    
+            align-items: center;
     margin-bottom: 29px;
 }
 
@@ -531,17 +602,30 @@ fieldset {
 .form__people-count {
     padding: 0;
     border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 54px;
 }
 
 .form__people-count-adults {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 226px;
 }
 
@@ -550,8 +634,12 @@ fieldset {
 }
 
 .form__people-count-childrens {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 178px;
 }
 
@@ -579,7 +667,8 @@ fieldset {
 
 .form__people-count-adults label,
 .form__people-count-childrens label {    
-    flex-shrink: 1;    
+    -ms-flex-negative: 1;    
+        flex-shrink: 1;    
 }
 
 .form__button-search {
@@ -599,6 +688,8 @@ fieldset {
 }
 
 .form__people-count-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -659,11 +750,17 @@ fieldset {
 }
 
 .inner-form__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .inner-form__content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -692,9 +789,11 @@ fieldset {
 }
 
 .inner-form__item input[type=checkbox] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    display: none;
+}
+
+.inner-form__item input[type=checkbox]::-ms-expand {
+    display: none;
 }
 
 .inner-form__checkbox {
@@ -739,8 +838,12 @@ fieldset {
 
 .price-controls {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 36px;
     margin-bottom: 20px;
   
@@ -754,7 +857,9 @@ fieldset {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   
     width: 2px;
     height: 22px;
@@ -816,7 +921,8 @@ fieldset {
     background: #ababab;
     border: 6px solid #ffffff;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+            box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
 }
 
@@ -875,8 +981,12 @@ fieldset {
 
 .result__top {
     height: 86px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -889,6 +999,8 @@ fieldset {
 }
 
 .result__sort-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -897,13 +1009,17 @@ fieldset {
     line-height: 18px;
     text-transform: uppercase;
     margin-right: 40px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
 }
 
 .result__sort-buttons {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -936,9 +1052,15 @@ fieldset {
 }
 
 .result__sort-arrows {
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;  
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;  
 }
 
 .result__sort-arrow-min,
@@ -993,6 +1115,8 @@ fieldset {
     width: 100%;
     margin-top: 30px;
     padding-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border-bottom: 1px solid #e5e5e5;
 }
@@ -1003,8 +1127,12 @@ fieldset {
 
 .hotel__desc-wrapper {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .hotel__desc h2 {
@@ -1029,23 +1157,42 @@ fieldset {
 }
 
 .hotel__desc {    
+    display: -webkit-box;    
+    display: -ms-flexbox;    
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .hotel__action {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 60px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .hotel__details,
 .hotel__book {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .hotel__details p,
@@ -1104,10 +1251,19 @@ fieldset {
 }
 
 .hotel__rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 .hotel__rating p {
