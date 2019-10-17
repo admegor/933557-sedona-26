@@ -714,8 +714,13 @@ fieldset {
 
 .inner-form__item input[type=checkbox]:checked + .inner-form__checkbox {
     background-image: url('../img/checkbox-on.svg');
-    width: 27px;
+    width: 27px;     
 }
+
+.inner-form__item input[type=checkbox]:focus + .inner-form__checkbox {
+    outline: auto;   
+}
+  
 
 .filter-range {
     width: 318px;    
@@ -913,8 +918,16 @@ fieldset {
     text-transform: uppercase;
     font-size: 12px;
     color: rgba(0, 0, 0, 0.3);
-    border-bottom: 1px dotted #81b3d2;
-    
+    border-bottom: 1px dotted #81b3d2;    
+}
+
+.result__sort-button button:hover {
+    color: #81b3d2;
+}
+
+.result__sort-button button:active {
+    color: #000000;
+    border: none;
 }
 
 .result__sort-button--active button {
@@ -959,6 +972,23 @@ fieldset {
     left: 0;
 }
 
+.result__sort-arrow-min:hover::after {
+    border-bottom-color: #000000;
+}
+
+.result__sort-arrow-max:hover::after {
+    border-top-color: #000000;
+}
+
+.result__sort-arrow-min:active::after {
+    border-bottom-color: #81b3d2;
+}
+
+.result__sort-arrow-max:active::after {
+    border-top-color: #81b3d2;
+}
+
+
 .hotel {
     width: 100%;
     margin-top: 30px;
@@ -983,7 +1013,19 @@ fieldset {
     font-weight: 700;
     font-size: 21px;
     line-height: 16px;
+}
 
+.hotel__desc-header {
+    text-decoration: none;
+    color: #000000;
+}
+
+.hotel__desc-header:hover {
+    color: #81b3d2;
+}
+
+.hotel__desc-header:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .hotel__desc {    
@@ -1032,6 +1074,24 @@ fieldset {
     padding: 3px 0;
     text-decoration: none;
     font-size: 14px;
+}
+
+.hotel__details a:hover {
+    background-color: #669ec0;
+}
+
+.hotel__details a:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel__book a:hover {
+    background-color: #604e43;
+}
+
+.hotel__book a:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel__book a {
