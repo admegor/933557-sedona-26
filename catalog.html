@@ -29,33 +29,69 @@
 
         <section class="inner-form">
             <div class="inner-form__wrapper">
-                    <form class="inner-form__content" action="">
+                <form class="inner-form__content" action="https://echo.htmlacademy.ru" method="post">
+                    <div class="inner-form__content-wrapper">
                         <fieldset>
                             <legend>Инфраструктура:</legend>
-                            <input type="checkbox" name="pool-area" id="pool">
-                            <label for="pool">Бассейн</label>
-                            <input type="checkbox" name="parking-area" id="parking">
-                            <label for="parking">Бассейн</label>
-                            <input type="checkbox" name="wi-fi-area" id="wi-fi">
-                            <label for="wi-fi">Бассейн</label>
+                            <ul class="inner-form__list">
+                                <li class="inner-form__item"> 
+                                    <label>
+                                        <input type="checkbox" name="pool-area" checked>
+                                        <span class="inner-form__checkbox"></span>
+                                        Бассейн
+                                    </label>
+                                </li>
+                                <li class="inner-form__item">
+                                    <label>
+                                        <input type="checkbox" name="parking-area">
+                                        <span class="inner-form__checkbox"></span>
+                                        Парковка
+                                    </label>
+                                </li>
+                                <li class="inner-form__item">
+                                    <label>
+                                        <input type="checkbox" name="wi-fi-area">
+                                        <span class="inner-form__checkbox"></span>
+                                        Wi-fi
+                                    </label>
+                                </li>
+                            </ul>                                
                         </fieldset>
                         <fieldset>
-                            <legend>Тим жилья:</legend>
-                            <input type="checkbox" name="hotel-area" id="hotel">
-                            <label for="hotel">Аппартаменты</label>
-                            <input type="checkbox" name="motel-area" id="motel">
-                            <label for="motel">Аппартаменты</label>
-                            <input type="checkbox" name="apartment-area" id="apartment">
-                            <label for="apartment">Аппартаменты</label>
+                            <legend>Тип жилья:</legend>
+                            <ul class="inner-form__list">
+                                <li class="inner-form__item">
+                                    <label>
+                                        <input type="checkbox" name="hotel-area" checked>
+                                        <span class="inner-form__checkbox"></span>
+                                        Гостиница
+                                    </label>
+                                </li>
+                                <li class="inner-form__item">
+                                    <label>
+                                        <input type="checkbox" name="motel-area" checked>
+                                        <span class="inner-form__checkbox"></span>
+                                        Мотель
+                                    </label>
+                                </li>
+                                <li class="inner-form__item"> 
+                                    <label>
+                                        <input type="checkbox" name="apartment-area" checked>
+                                        <span class="inner-form__checkbox"></span>
+                                        Апартаменты
+                                    </label>
+                                </li>
+                            </ul>
                         </fieldset>
-                        <fieldset>
-                            <legend>Стоимость в сутки (Р):</legend>
-                            <input type="text" name="" id="" value="От 0">
-                            <input type="text" name="" id="" value="До 3000">
-                            <input type="range" min="0" max="3000" step="1" value="0">
-                        </fieldset>
+                    </div>                        
+                    <fieldset>
+                        <legend>Стоимость в сутки (Р):</legend>
+                        <input type="text" name="" id="" value="От 0">
+                        <input type="text" name="" id="" value="До 3000">
+                        <input type="range" min="0" max="3000" step="1" value="0">
                         <input type="submit" value="Показать">
-                    </form>
+                    </fieldset>                        
+                </form>
             </div>            
         </section>
 
