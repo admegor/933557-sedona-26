@@ -84,13 +84,26 @@
                             </ul>
                         </fieldset>
                     </div>                        
-                    <fieldset>
-                        <legend>Стоимость в сутки (Р):</legend>
-                        <input type="text" name="" id="" value="От 0">
-                        <input type="text" name="" id="" value="До 3000">
-                        <input type="range" min="0" max="3000" step="1" value="0">
-                        <input type="submit" value="Показать">
-                    </fieldset>                        
+                    <fieldset class="filter-range">
+                        <legend class="filter-range-title">Стоимость в сутки (Р):</legend>
+                        <div class="price-controls">
+                            <label class="min-price">от
+                                <input type="text" name="min-price" value="0">
+                            </label>
+                            <label class="max-price">до
+                                <input type="text" name="max-price" value="3000">
+                            </label>
+                        </div>                        
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar"></div>
+                                <div class="range-toggle range-toggle-min"></div>
+                                <div class="range-toggle range-toggle-max"></div>  
+                            </div>
+                        </div>
+                        <button class="btn-transparent" type="submit">Показать</button> 
+                    </fieldset>
+                                        
                 </form>
             </div>            
         </section>
