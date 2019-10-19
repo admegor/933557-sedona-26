@@ -295,10 +295,18 @@ fieldset {
 }
 
 .advanteges__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 400px;
 }
 
@@ -390,6 +398,7 @@ fieldset {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    z-index: 2;
 }
 
 .call-to-action__header {
@@ -766,55 +775,13 @@ fieldset {
     background-color: #81b3d2;
 }
 
-.form-show {
-    display: block;
-    -webkit-animation: bounce 0.6s;
-            animation: bounce 0.6s;
+.form-hidden {
+    display: none;
 }
 
-@-webkit-keyframes bounce {
-    0% {
-      -webkit-transform: translateY(-2000px);
-              transform: translateY(-2000px);
-    }
-  
-    70% {
-      -webkit-transform: translateY(30px);
-              transform: translateY(30px);
-    }
-  
-    90% {
-      -webkit-transform: translateY(-10px);
-              transform: translateY(-10px);
-    }
-  
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-  }
-
-@keyframes bounce {
-    0% {
-      -webkit-transform: translateY(-2000px);
-              transform: translateY(-2000px);
-    }
-  
-    70% {
-      -webkit-transform: translateY(30px);
-              transform: translateY(30px);
-    }
-  
-    90% {
-      -webkit-transform: translateY(-10px);
-              transform: translateY(-10px);
-    }
-  
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-  }
+.form-show {
+    display: block;
+}
 
 .inner-form {
     width: 100%;
