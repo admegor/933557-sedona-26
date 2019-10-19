@@ -49,15 +49,6 @@ img {
     vertical-align: top;
 }
 
-p {
-    margin: 0;
-}
-
-fieldset {
-    padding: 0;
-    border: none;
-}
-
 .visually-hidden:not(:focus):not(:active) {
     position: absolute;
     width: 1px;
@@ -226,6 +217,7 @@ fieldset {
 }
 
 .slogan__top {
+    margin: 0;
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
@@ -235,6 +227,7 @@ fieldset {
 }
 
 .slogan__bottom {
+    margin: 0;
     line-height: 26px;    
     margin-top: 26px;    
     margin-bottom: 52px;
@@ -242,7 +235,7 @@ fieldset {
 
 .promo {
     width: 100%;
-    height: 256px;
+    min-height: 256px;
     background-color: #81b3d2;    
 }
 
@@ -262,6 +255,7 @@ fieldset {
 }
 
 .promo__header {
+    margin: 0;
     font-weight: 700;
     text-align: center;
     font-size: 21px;
@@ -273,6 +267,7 @@ fieldset {
 
 .promo__count,
 .promo__desc {
+    margin: 0;
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
@@ -291,7 +286,7 @@ fieldset {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    height: 330px;
+    min-height: 330px;
 }
 
 .advanteges__section {
@@ -326,8 +321,10 @@ fieldset {
 }
 
 .advanteges__desc  {
+    margin: 0;
     width: 300px;
     margin-top: 25px;
+    margin-bottom: 80px;
 }
 
 .feature {
@@ -351,6 +348,7 @@ fieldset {
 }
 
 .feature__header {
+    margin: 0;
     margin-top: 48px;
     font-size: 21px;
     font-weight: 700;
@@ -359,6 +357,7 @@ fieldset {
 
 .feature__count,
 .feature__content {
+    margin: 0;
     margin-left: 60px;
     margin-right: 60px;
     margin-top: 23px;
@@ -412,6 +411,7 @@ fieldset {
 }
 
 .call-to-action__content {
+    margin: 0;
     margin-top: 26px;
     line-height: 24px;
 }
@@ -455,6 +455,7 @@ fieldset {
 }
 
 .footer__hashtag {
+    margin: 0;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -522,22 +523,22 @@ fieldset {
 }
 
 .footer__developed-by p {
+    margin: 0;
     text-transform: uppercase;
     margin-right: 8px;
 }
 
-.footer__developed-by-link:hover svg path {
+.footer__developed-by-link:hover .footer__html-logo {
     fill: #81b3d2;
 }
 
-.footer__developed-by-link:active svg path {
+.footer__developed-by-link:active .footer__html-logo {
     fill: #bdbbbc;
 }
 
 .form__wrapper {
     position: relative;
 }
-
 
 .form {
     width: 568px;
@@ -811,6 +812,12 @@ fieldset {
     display: flex;
 }
 
+.inner-form__content-wrapper fieldset,
+.inner-form__content fieldset {
+    padding: 0;
+    border: none;
+}
+
 .inner-form__content-wrapper fieldset {
     margin-right: 115px;
 }
@@ -822,7 +829,6 @@ fieldset {
     text-transform: uppercase;
     margin-bottom: 25px;
 }
-
 
 .inner-form__list {
     list-style: none;
@@ -845,8 +851,7 @@ fieldset {
     width: 23px;
     height: 23px;
     margin-left: -40px;
-    background: url('../img/checkbox-off.svg') no-repeat center center;
-    
+    background: url('../img/checkbox-off.svg') no-repeat center center;    
 }
 
 .inner-form__item label {
@@ -862,8 +867,7 @@ fieldset {
 
 .inner-form__item input[type=checkbox]:focus + .inner-form__checkbox {
     outline: auto;   
-}
-  
+}  
 
 .filter-range {
     width: 318px;    
@@ -897,7 +901,7 @@ fieldset {
 }
 
 .price-controls::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -910,7 +914,7 @@ fieldset {
   
     background: #ffffff;
     
-  }
+}
 
 .price-controls label {
     display: inline-block;
@@ -925,8 +929,8 @@ fieldset {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 145px;
-  padding-left: 65px;
+    width: 145px;
+    padding-left: 65px;
 }
 
 .price-controls input {
@@ -1033,6 +1037,7 @@ fieldset {
 }
 
 .result__find {
+    margin: 0;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -1047,6 +1052,7 @@ fieldset {
 }
 
 .result__sort {
+    margin: 0;
     font-size: 12px;
     line-height: 18px;
     text-transform: uppercase;
@@ -1177,6 +1183,7 @@ fieldset {
 }
 
 .hotel__desc h2 {
+    max-width: 260px;
     margin: 0;
     text-transform: uppercase;
     font-weight: 700;
@@ -1238,6 +1245,7 @@ fieldset {
 
 .hotel__details p,
 .hotel__book p {
+    margin: 0;
     line-height: 19px;
     text-align: left;
 }
@@ -1307,7 +1315,8 @@ fieldset {
             align-items: flex-end;
 }
 
-.hotel__rating p {
+.hotel__rating-count {
+    margin: 0;
     background-color: #f2f2f2;
     padding: 3px 11px;
 }
