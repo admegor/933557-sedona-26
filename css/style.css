@@ -1183,7 +1183,7 @@ img {
 }
 
 .hotel__desc h2 {
-    max-width: 260px;
+    max-width: 660px;
     margin: 0;
     text-transform: uppercase;
     font-weight: 700;
@@ -1222,6 +1222,7 @@ img {
     display: -ms-flexbox;
     display: flex;
     height: 60px;
+    max-width: 260px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
