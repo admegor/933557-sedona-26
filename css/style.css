@@ -185,9 +185,11 @@ fieldset {
 }
 
 .header__initial-screen {
+    width: 100%;
     background-image: url('../img/background-photo.jpg');
     background-repeat: no-repeat;
     background-position: center -54px;
+    background-size: cover;
     min-height: 509px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -195,22 +197,23 @@ fieldset {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    position: relative;
-    align-items: center;
+    position: relative;   
     margin-top: -3px;
+}
+
+.header__initial-screen {
+    padding-top: 78px;
 }
 
 .header__initial-screen::after {
     content: '';
     position: absolute;
-    background: url('../img/separator.svg') no-repeat center center;
-    background-size: cover;
+    background: url('../img/polygon.png') no-repeat center center;    
 
     width: 100%;
     height: 56px;
-
     bottom: 0;
-    left: 0;
+    left: 0; 
 }
 
 .slogan {
@@ -292,40 +295,31 @@ fieldset {
 }
 
 .advanteges__section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: relative;
-    text-align: center;
-    width: 300px;
-    margin: 0 50px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
 }
 
-.advanteges__section img {    
-    position: absolute;
-    bottom: 198px;
+.advanteges__section img {
+    margin-top: 60px;
+    height: 70px;
 }
 
 .advanteges__header {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    margin: 0;
-    margin-top: 12px;
     font-size: 21px;
     line-height: 21px;
     font-weight: 700;
-    text-transform: uppercase;       
+    text-transform: uppercase;
+
+    margin: 0;
+    margin-top: 31px;
 }
 
-.advanteges__desc {
-    position: absolute;
-    bottom: 83px;      
+.advanteges__desc  {
+    width: 300px;
+    margin-top: 25px;
 }
 
 .feature {
@@ -572,7 +566,8 @@ fieldset {
     text-transform: uppercase;
     line-height: 26px;    
     width: 100px;
-    margin-right: 10px;  
+    margin-right: 8px;
+    margin-left: 2px; 
 }
 
 .form__date-of-arrival-wrapper input[type=text],
@@ -618,8 +613,10 @@ fieldset {
 .form__button-calendar {
     position: absolute;
     right: -4px;
+    top: -4px;
     cursor: pointer;
     padding: 10px;
+    background-color: transparent;
 }
 
 .form__date-of-arrival-wrapper:hover .form__calendar,
@@ -771,24 +768,51 @@ fieldset {
 
 .form-show {
     display: block;
-    animation: bounce 0.6s;
+    -webkit-animation: bounce 0.6s;
+            animation: bounce 0.6s;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
     0% {
-      transform: translateY(-2000px);
+      -webkit-transform: translateY(-2000px);
+              transform: translateY(-2000px);
     }
   
     70% {
-      transform: translateY(30px);
+      -webkit-transform: translateY(30px);
+              transform: translateY(30px);
     }
   
     90% {
-      transform: translateY(-10px);
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
     }
   
     100% {
-      transform: translateY(0);
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+
+@keyframes bounce {
+    0% {
+      -webkit-transform: translateY(-2000px);
+              transform: translateY(-2000px);
+    }
+  
+    70% {
+      -webkit-transform: translateY(30px);
+              transform: translateY(30px);
+    }
+  
+    90% {
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
     }
   }
 
@@ -846,10 +870,6 @@ fieldset {
 }
 
 .inner-form__item input[type=checkbox] {
-    display: none;
-}
-
-.inner-form__item input[type=checkbox]::-ms-expand {
     display: none;
 }
 
