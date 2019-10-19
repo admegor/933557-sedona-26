@@ -431,10 +431,6 @@ fieldset {
     background-color: #503e33;
 }
 
-.form__wrapper img {
-    height: 472px;    
-}
-
 .footer {
    width: 100%;
    background-color: #ffffff;
@@ -547,8 +543,7 @@ fieldset {
     position: absolute;
     top: 0;
     left: 315px;
-    z-index: 1;
-    display: none;  
+    z-index: 1;    
 }
 
 .map__wrapper {
@@ -610,12 +605,6 @@ fieldset {
     line-height: 26px;
 }
 
-.form__date-of-arrival-wrapper svg,
-.form__departure-date-wrapper svg {
-    position: absolute;
-    right: 7px;
-}
-
 .form__fieldset input[type=text]:hover {
     background-color: #ebebeb;    
 }
@@ -624,6 +613,13 @@ fieldset {
     background-color: #fff;
     border: 2px solid #e5e5e5;
     outline: none;
+}
+
+.form__button-calendar {
+    position: absolute;
+    right: -4px;
+    cursor: pointer;
+    padding: 10px;
 }
 
 .form__date-of-arrival-wrapper:hover .form__calendar,
